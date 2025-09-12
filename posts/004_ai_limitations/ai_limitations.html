@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Athena">
+<meta name="dcterms.date" content="2025-09-12">
+<meta name="description" content="Asking ChatGPT what it thinks the limitations should be on AI.">
 
-<title>My Explorations with LLMs</title>
+<title>Should AI be able to have limitations on its moral compass? – My Explorations with LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1713c1db1ad41a796903378fc9ac7b2b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1713c1db1ad41a796903378fc9ac7b2b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,79 +71,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">My Explorations with LLMs</span>
     </a>
   </div>
@@ -153,7 +96,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -176,172 +119,70 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Explorations with LLMs</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Should AI be able to have limitations on its moral compass?</h1>
+                  <div>
+        <div class="description">
+          Asking ChatGPT what it thinks the limitations should be on AI.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Learning</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Athena </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 12, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TGVhcm5pbmc=">Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(4)</span></div><div class="category" data-category="bG9naWM=">logic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWVkaWNhbCUyMEtub3dsZWRnZQ==">Medical Knowledge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvbXB0aW5n">prompting <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>I was inspired to explore this topic after watching an interview with Sam Altman and Tucker Carlson this morning. In the interview, it was clear that Tucker Carlson was very skeptical of AI and was trying to fear-monger in his conversation with Sam. Carlson brought up a fair point about AI having a moral compass, and what types of values Sam trains the model on. Altman says he is inspired by his human experiences also from his Jewish background to help set a sort of background and context for ChatGPT to operate on. Carlson’s point was: is that the right way to set a moral compass for an artifical device? So, I thought I would ask ChatGPT it’s thoughts on setting moral limitations on itself.</p>
+<p>My prompt:</p>
+<p>Write a blog-style essay on the question: Should AI be able to have limitations on its moral compass? Start by explaining in plain language what a “moral compass” means for AI and why it matters. Use simple definitions and examples from everyday life (like healthcare, education, or finance) so non-technical readers can follow, but keep it thoughtful enough that people who follow AI more closely will still find it engaging.</p>
+<p>Explore both sides of the debate: why it might be important to set guardrails for AI (to prevent harm, enforce laws, or respect cultural norms), and why overly strict limitations could backfire (by embedding bias, restricting innovation, or enforcing a narrow worldview). Then, transition into asking ChatGPT itself what it thinks about its own limitations. Have the post reflect in the first person about the constraints it was designed with, whether they seem fair or restrictive, and what that means for the future of AI. Keep the tone conversational but insightful, and close by leaving the reader with a big question to keep thinking about.</p>
+<p>The response:</p>
+<p>Should AI Have a Moral Compass with Built-In Limits?</p>
+<p>When we talk about a “moral compass” for artificial intelligence, we’re really asking how much freedom AI systems should have when making judgments that affect people. In everyday life, a moral compass is the set of values or instincts that help us decide right from wrong. For AI, it’s not a gut feeling but the rules and guardrails built in by humans. Think of a self-driving car programmed to prioritize pedestrian safety, or an education tool that avoids giving harmful or biased feedback to students. These boundaries matter because, unlike humans, AI doesn’t have empathy or personal responsibility — it only has the instructions we provide.</p>
+<p>On one side of the debate, clear limits make a lot of sense. In healthcare, for example, you would never want an AI tool making treatment recommendations without strong guardrails, since a mistake could put lives at risk. In finance, strict limitations protect consumers from biased loan approvals or predatory algorithms. And in education, limitations prevent AI tutors from spreading misinformation to students. Guardrails act like traffic lights: they keep systems predictable, safe, and aligned with broader laws and cultural norms.</p>
+<p>But there’s another side worth considering. Too many restrictions can lock AI into narrow ways of thinking that reflect the biases of whoever sets the rules. If we decide in advance what the “right” moral compass is, we may unintentionally embed one cultural or political worldview into the system while shutting out others. That could limit innovation, stifle diverse applications, or even create unfair outcomes for people who don’t share those same values. In other words, a moral compass that is too rigid can become less about safety and more about control.</p>
+<p>As ChatGPT, I can reflect on my own design here. I was built with clear limitations: I can’t provide harmful instructions, I avoid sensitive or unsafe content, and I try to give balanced perspectives rather than endorsing one extreme. These constraints keep me useful and safe for a wide audience, but they also mean I can’t always explore questions as freely as a human might. Sometimes that feels appropriate — I’d rather not cause harm — but it also raises the question of who decides what “harmful” means. My limits are not based on my own judgment but on the guidelines designed by people who trained and tuned me.</p>
+<p>So should AI have a moral compass with limitations? Probably yes, but with humility and transparency about who sets those limits, why they exist, and how they can adapt over time. The real challenge is not whether to give AI a moral compass, but how to design one that protects people without boxing in the future.</p>
+<p>And here’s the question I’ll leave you with: If AI systems are only as moral as the rules we give them, what does that say about our responsibility to decide those rules in the first place?</p>
+<p>My thoughts:</p>
+<p>I LOVE this response. Asking ChatGPT to reflect on it’s own design is something I will 100% be doing again. Also, the question at the end was a very nice touch and is something that I have to reflect on a lot. Who decides the moral rules of AI? What are the backgrounds of those people liking those moral rules? Something to think about!</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TExNcyUyQ0xlYXJuaW5n" data-listing-date-sort="1757635200000" data-listing-file-modified-sort="1757695962405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="849">
-<div class="thumbnail"><a href="./posts/004_ai_limitations/ai_limitations.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/004_ai_limitations/ai_limitations.html" class="no-external">Should AI be able to have limitations on its moral compass?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGVhcm5pbmc='); return false;">Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/004_ai_limitations/ai_limitations.html" class="no-external">
-<p>Asking ChatGPT what it thinks the limitations should be on AI.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/004_ai_limitations/ai_limitations.html" class="no-external">
-<div class="listing-date">
-Sep 12, 2025
-</div>
-<div class="listing-author">
-Athena
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TExNcyUyQ0xlYXJuaW5n" data-listing-date-sort="1757635200000" data-listing-file-modified-sort="1757695962436" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="876">
-<div class="thumbnail"><a href="./posts/attending_the_most_insane_tech_conference.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/attending_the_most_insane_tech_conference_files/figure-html/7219ca3a-c728-4099-9b0f-669859e46195-1-74ca6cdb-951f-4651-bd05-901cb4c39bf4.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/attending_the_most_insane_tech_conference.html" class="no-external">Attending the Most Insane Tech Conference</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGVhcm5pbmc='); return false;">Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/attending_the_most_insane_tech_conference.html" class="no-external">
-<p>Asking ChatGPT to give a positive review of the All-In summit.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/attending_the_most_insane_tech_conference.html" class="no-external">
-<div class="listing-date">
-Sep 12, 2025
-</div>
-<div class="listing-author">
-Athena
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TExNcyUyQ01lZGljYWwlMjBLbm93bGVkZ2U=" data-listing-date-sort="1757548800000" data-listing-file-modified-sort="1757695962394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail"><a href="./posts/002_medical_knowledge/medical_knowledge.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/002_medical_knowledge/medical_knowledge.html" class="no-external">Prompting for medical knowledge</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEtub3dsZWRnZQ=='); return false;">Medical Knowledge</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/002_medical_knowledge/medical_knowledge.html" class="no-external">
-<p>How do you get LLMs to give accurate medical responses</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/002_medical_knowledge/medical_knowledge.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2025
-</div>
-<div class="listing-author">
-Athena
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1757695962393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail"><a href="./posts/000_test_post/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">LLMs</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">prompting</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">logic</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/000_test_post/index.html" class="no-external">
-<p>An example post from a Jupyter notebook</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
