@@ -2,62 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2025-10-26T15:45:12.944Z</lastmod>
+    <lastmod>2025-10-26T15:53:05.006Z</lastmod>
   </url>
   <url>
     <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/attending_the_most_insane_tech_conference.html</loc>
-    <lastmod>2025-10-26T15:45:12.970Z</lastmod>
+    <lastmod>2025-10-26T15:53:05.064Z</lastmod>
   </url>
   <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/007_aiconstruction/aiconstruction.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/005_health_fads/health_fads.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/010_miramurati/openailore.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/002_medical_knowledge/medical_knowledge.html</loc>
-    <lastmod>2025-10-26T15:45:12.946Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/012_dig/fallbreak.html</loc>
-    <lastmod>2025-10-26T15:45:12.970Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2025-10-26T15:45:12.945Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2025-10-26T15:45:12.946Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/004_ai_limitations/ai_limitations.html</loc>
-    <lastmod>2025-10-26T15:45:12.957Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/008_healthupdate/healthupdate2.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
-  </url>
-  <url>
-    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/011_deaging/de_aging.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/013_pennfoodupdate/Untitled.html</loc>
+    <lastmod>2025-10-26T15:53:05.064Z</lastmod>
   </url>
   <url>
     <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/009_askingchatfallactivities/phillyfall.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/011_deaging/de_aging.html</loc>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/008_healthupdate/healthupdate2.html</loc>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/004_ai_limitations/ai_limitations.html</loc>
+    <lastmod>2025-10-26T15:53:05.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2025-10-26T15:53:05.008Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/index.html</loc>
+    <lastmod>2025-10-26T15:53:05.007Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/012_dig/fallbreak.html</loc>
+    <lastmod>2025-10-26T15:53:05.063Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/002_medical_knowledge/medical_knowledge.html</loc>
+    <lastmod>2025-10-26T15:53:05.008Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/010_miramurati/openailore.html</loc>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/005_health_fads/health_fads.html</loc>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/007_aiconstruction/aiconstruction.html</loc>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
   </url>
   <url>
     <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/006_random_things_i_asked/RANDOMthings.html</loc>
-    <lastmod>2025-10-26T15:45:12.961Z</lastmod>
+    <lastmod>2025-10-26T15:53:05.024Z</lastmod>
   </url>
   <url>
     <loc>https://athenakrik.github.io/comm4190_F25_Using_LLMs_Blog/posts/techno_optimism.html</loc>
-    <lastmod>2025-10-26T15:45:12.970Z</lastmod>
+    <lastmod>2025-10-26T15:53:05.064Z</lastmod>
   </url>
 </urlset>
